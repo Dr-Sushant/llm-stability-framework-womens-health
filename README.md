@@ -1,4 +1,4 @@
-# Ashwam ML/AI Internship — Exercise B  
+### llm-output-stability-evaluation-framework 
 ## Run-to-Run Variance & Stability Analysis
 
 ### What did you build?
