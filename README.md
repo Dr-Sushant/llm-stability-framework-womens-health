@@ -1,7 +1,13 @@
-### llm-output-stability-evaluation-framework 
+# LLM Output Stability Evaluation Framework
+
+![Architecture](docs/screenshots/stability_framework_architecture.png)
+
+A deterministic framework for evaluating consistency, stability, and safety of structured LLM outputs across repeated executions.
+
 ## Run-to-Run Variance & Stability Analysis
 
-### What did you build?
+## Overview
+
 I built a deterministic stability analysis framework to measure run-to-run variance in LLM-generated structured outputs without relying on canonical labels. The system evaluates whether multiple outputs generated from the same journal entry are safe and consistent by anchoring comparisons to evidence spans and enforcing stability on safety-critical fields such as polarity.
 
 The framework distinguishes between acceptable lexical or heuristic drift and unsafe semantic instability, prioritizing restraint and auditability in a women’s health journaling context.
@@ -38,6 +44,14 @@ The framework distinguishes between acceptable lexical or heuristic drift and un
 - Explicit unsafe classification rather than forced reconciliation.
 
 ---
+
+## Technical Stack
+
+- Python
+- JSON-based structured outputs
+- Deterministic evidence-span matching
+- Rule-based stability metrics
+- Safety-oriented evaluation framework
 
 ### Evaluation or monitoring strategy
 - **Agreement rate** to measure consistency of extraction.
